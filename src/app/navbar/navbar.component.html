@@ -1,0 +1,116 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="/home">
+      FC<span style="color: red;">RIR</span>
+    </a>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-awesome fas fa-bars"></span>
+      <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="home#story"
+            >HISTOIRE ET ENGAGEMENTS</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="/articles">ACTUALITE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="home#actions">NOS ACTIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#contact">REJOIGNEZ-NOUS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#contact">SUIVEZ-NOUS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end of container -->
+</nav>
+<!-- end of navbar -->
+<!-- end of navigation -->
+<!-- Preloader -->
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Header -->
+<header id="header" class="header">
+  <div class="header-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-xl-5">
+          <div class="text-container">
+            <h1 id="slogan">{{ title }}</h1>
+            <p class="p-large" *ngIf="smallDescription">
+              {{ smallDescription }}
+            </p>
+          </div>
+          <!-- end of text-container -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-6 col-xl-7">
+          <div class="image-container">
+            <div class="img-wrapper">
+              <ng-container *ngIf="!bannerLink">
+                <img
+                  id="main-image"
+                  class="img-fluid"
+                  [src]="imagePath"
+                  alt="alternative"
+                />
+              </ng-container>
+              <ng-container *ngIf="bannerLink">
+                <a
+                  [href]="bannerLink"
+                  class="banner-link"
+                  [target]="blank ? '_blank' : '_self'"
+                >
+                  <img
+                    id="main-image"
+                    class="img-fluid"
+                    [src]="imagePath"
+                    alt="alternative"
+                  />
+                </a>
+              </ng-container>
+            </div>
+            <!-- end of img-wrapper -->
+          </div>
+          <!-- end of image-container -->
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of header-content -->
+</header>
+<!-- end of header -->

@@ -1,0 +1,15 @@
+
+<app-nav [title]="headerTitle"></app-nav>
+<div class="body container">
+  <h4>À la une</h4>
+  <div class="cards">
+    <div class="card"  *ngFor="let article$ of articles; let i=index">
+      <a [href]="'/articles/'+(i+1)">
+      <app-article-card >
+          <div [innerHTML]="article$ | async"></div>
+        </app-article-card>
+      </a>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

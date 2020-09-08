@@ -1,0 +1,22 @@
+.body{
+  min-height: 100%;
+}
+.title{
+  text-align: center;
+}
+.body{
+  margin-top:3rem;
+  margin-bottom:3rem;
+}
+.cards{
+  margin-top: 3rem;
+}
+.cards ::ng-deep h2{
+  font-size: 24px;
+}
+.cards a:hover, .cards a:active{
+  text-decoration: underline #53A877;
+}
+.card{
+  margin-bottom: 3rem;
+}

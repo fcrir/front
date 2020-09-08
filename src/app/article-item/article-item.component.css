@@ -1,0 +1,38 @@
+.body{
+  min-height: 100%;
+}
+.content ::ng-deep .article-item-title{
+  text-align: center;
+}
+.content ::ng-deep .custom-list{
+  color: #555;
+	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+.content ::ng-deep .donate-btn{
+  color: #FFF;
+  background-color: #53A877;
+}
+.content ::ng-deep .donate-btn:hover{
+  cursor: pointer;
+}
+.content ::ng-deep .donate-link{
+  color: #53A877;
+}
+.content ::ng-deep .signature{
+  display: flex;
+  justify-content: flex-end;
+}
+.content ::ng-deep .signature span{
+  font-weight: bold;
+}
+.content ::ng-deep .signature-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.content ::ng-deep .letter{
+ margin-top: 3rem;
+}
+.content{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}

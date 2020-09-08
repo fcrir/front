@@ -1,0 +1,9 @@
+<app-nav [title]="title"
+[bannerLink]="'https://www.leetchi.com/c/couffin-ramadan2020-fcrir?fbclid=IwAR1AxAJf4D25ImL0muu_F5g10ViGjMGNDizvkAF4_LC46QWWnXAqQ63iJ_8'"
+[blank]="true"
+></app-nav>
+<div class="body container">
+  <div class="content" [innerHTML]="articleContent$ | async">
+  </div>
+</div>
+<app-footer></app-footer>
